@@ -1,31 +1,18 @@
-# nameSort
+# The Avenger's Chore Board
+
+Assign chores using drag and drop...
+
+Demonstrates
+- Angular 7
+- A homebrew drag and drop implementation with multi-select
+- Use of CSS flexbox for grid-like features
+- A homebrew expansion panel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Acknowledgements
 List of countries 
 (https://datahub.io/JohnSnowLabs/country-and-continent-codes-list)
+
+Customizing drag image while dragging multiple items
+http://marceljuenemann.github.io/angular-drag-and-drop-lists/demo/#/nested
