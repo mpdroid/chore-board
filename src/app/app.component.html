@@ -2,7 +2,8 @@
     <div class="title">
         {{title}}
     </div>
-    <mat-icon class="lock" [svgIcon]="isDirty ? 'lock_open' : 'lock'" (click)="lock()"></mat-icon>
+    <mat-icon [ngClass]="{'locked': !isDirty, 'unlocked': isDirty}" [svgIcon]="isDirty ? 'lock_open' : 'lock'"
+              (click)="lock()"></mat-icon>
     <div class="top-bar">
         <mat-card [ngClass]="{'unassigned-col': aid === 0, 'avenger-col': aid > 0}"
                   *ngFor="let avenger of avengers; let aid = index">

@@ -25,6 +25,7 @@
         text-align: center;
         justify-content:center;
         width: 100vw;
+        background-color: white;
     }
     .top-bar {
         z-index: 20;
@@ -171,12 +172,22 @@
     .dragImage {
         top: 0;
     }
-    .lock {
+    .locked {
         position: fixed;
         cursor: pointer;
         top: 90vh;
         right: 1vw;
         color: $primary;
+        height: 48px;
+        width: 48px;
+        z-index: 30;
+    }
+    .unlocked {
+        position: fixed;
+        cursor: pointer;
+        top: 90vh;
+        right: 1vw;
+        color: $warn;
         height: 48px;
         width: 48px;
         z-index: 30;
