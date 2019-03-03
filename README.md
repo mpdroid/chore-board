@@ -1,6 +1,7 @@
-# The Avenger's Chore Board
+# The Avenger's Chore Board 
+[demo](https://mpdroid.github.io/chore-board/)
 
-Assign chores using drag and drop...
+Assign chores using drag and drop.
 
 Demonstrates
 - Angular 7
@@ -12,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Acknowledgements
 List of countries 
-- (https://datahub.io/JohnSnowLabs/country-and-continent-codes-list)
+- https://datahub.io/JohnSnowLabs/country-and-continent-codes-list
 
 Customizing drag image while dragging multiple items
-- (http://marceljuenemann.github.io/angular-drag-and-drop-lists/demo/#/nested)
+- http://marceljuenemann.github.io/angular-drag-and-drop-lists/demo/#/nested
