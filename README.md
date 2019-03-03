@@ -1,6 +1,7 @@
-# The Avenger's Chore Board
+# The Avenger's Chore Board 
+[demo](https://mpdroid.github.io/chore-board/)
 
-Assign chores using drag and drop...
+Assign chores using drag and drop.
 
 Demonstrates
 - Angular 7
