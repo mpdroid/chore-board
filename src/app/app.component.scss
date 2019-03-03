@@ -1,0 +1,201 @@
+@import "../_variables.scss";
+
+* {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+
+    .title {
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        height: 30px;
+        font-family: "Lucida Console";
+        font-size: 1.5em;
+        text-align: center;
+        justify-content:center;
+        width: 100vw;
+    }
+    .top-bar {
+        z-index: 20;
+        display: flex;
+        flex-direction: row;
+        min-width: 100vw;
+        width: 100vw;
+        background-color: white;
+        height: 40px;
+        font-weight: bold;
+        position: fixed;
+        top: 30px;
+        flex-grow: 1;
+
+        ::ng-deep mat-card.unassigned-col {
+            min-width: 120px;
+            background-color: #FFFFFF;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            background-color: $accent;
+            color: white;
+            flex-grow: 1;
+        }
+
+        ::ng-deep mat-card.avenger-col {
+            min-width: 120px;
+            background-color: $primary;
+            color: white;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            flex-grow: 1;
+        }
+    }
+    .category-container{
+        position: relative;
+        margin-top: 40px;
+        margin-left: 0px;
+        margin-right: 0px;
+        .category {
+            z-index: 10;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            max-width: 100vw;
+            background-color: transparent;
+            border-bottom: 0.02px solid lightgray;
+
+            .unassigned-col {
+                ::ng-deep mat-card.category-panel ::ng-deep mat-card-title {
+                    cursor: pointer !important;
+                    text-align: left !important;
+                    padding-left: 10px !important;
+                }
+                ::ng-deep mat-card.category-panel {
+                    cursor: pointer !important;
+                    .expand-image {
+                        content: url('../assets/outline_expand_more_black_18dp.png');
+                        position: absolute;
+                        pointer-events:none;
+                        top: 8px;
+                        right: 8px;
+                    }
+                    .close-image {
+                        content: url('../assets/outline_expand_less_black_18dp.png');
+                        position: absolute;
+                        pointer-events:none;
+                        top: 8px;
+                        right: 8px;
+                    }
+                }
+            }
+            .assignment {
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0;
+                width: 0;
+                margin: 5px;
+                padding: 0px;
+                z-index: 10;
+                flex-basis: auto; /* default value */
+                flex-grow: 1;
+
+                ::ng-deep mat-card.category-panel {
+                    position: relative;
+                    cursor: default ;
+                    padding: 5px;
+                    font-size: 0.9em;
+                    background-color: #ffffff;
+                }
+
+                ::ng-deep mat-card.category-panel ::ng-deep mat-card-title {
+                    padding: 5px;
+                    height: 24px !important;
+                    cursor: default;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: -moz-none;
+                    -o-user-select: none;
+                    user-select: none;
+                    background-color: #FFFFFF;
+                    text-align: center;
+                }
+
+                ::ng-deep mat-card.category-panel ::ng-deep mat-card-content {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+                ::ng-deep mat-card.task {
+                    cursor: default;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: -moz-none;
+                    -o-user-select: none;
+                    user-select: none;
+                    padding: 5px;
+                    margin-top: 5px;
+                }
+                ::ng-deep mat-card.task.selected {
+                    background-color: $light-accent;
+                }
+            }
+        }
+    }
+
+
+    .watermark {
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        font-family: Verdana;
+        font-style: italic;
+        font-size: 2em;
+        color: lightgray;
+        background-color: white;
+        z-index: 3;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .dragImage {
+        top: 0;
+    }
+    .lock {
+        position: fixed;
+        cursor: pointer;
+        top: 90vh;
+        right: 1vw;
+        color: $primary;
+        height: 48px;
+        width: 48px;
+        z-index: 30;
+    }
+}
+
+mat-card.category {
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.draggable * {
+    cursor: pointer !important;
+}
+
+.droppable {
+    cursor: default;
+}

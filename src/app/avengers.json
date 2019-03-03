@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "name": "Unassigned"
+  },
+  {
+    "id": 1,
+    "name": "Captain America"
+  },
+  {
+    "id": 2,
+    "name": "Iron Man"
+  },
+  {
+    "id": 3,
+    "name": "Thor"
+  },
+  {
+    "id": 4,
+    "name": "Hulk"
+  },
+  {
+    "id": 5,
+    "name": "Spiderman"
+  },
+  {
+    "id": 6,
+    "name": "Black Panther"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Strange"
+  }
+]

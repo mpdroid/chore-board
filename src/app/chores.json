@@ -1,0 +1,118 @@
+[
+  {
+    "category": "Kitchen",
+    "tasks": [
+      {
+        "name": "Buy groceries"
+      },
+      {
+        "name": "Cook breakfast"
+      },
+      {
+        "name": "Cook lunch"
+      },
+      {
+        "name": "Cook dinner"
+      },
+      {
+        "name": "Rinse dishes"
+      },
+      {
+        "name": "Run dishwasher"
+      },
+      {
+        "name": "Take out the trash"
+      }
+    ]
+  },
+  {
+    "category": "Laundry",
+    "tasks": [
+      {
+        "name": "Wash and Dry"
+      },
+      {
+        "name": "Fold clothes"
+      },
+      {
+        "name": "Press clothes"
+      },
+      {
+        "name": "Dry cleaning"
+      }
+    ]
+  },
+  {
+    "category": "Cleaning",
+    "tasks": [
+      {
+        "name": "Vacuum carpets"
+      },
+      {
+        "name": "Mop floors"
+      },
+      {
+        "name": "Clean bathrooms"
+      },
+      {
+        "name": "Dust Furniture"
+      }
+    ]
+  },
+  {
+    "category": "Money",
+    "tasks": [
+      {
+        "name": "Pay utility bills"
+      },
+      {
+        "name": "File taxes"
+      },
+      {
+        "name": "Pay credit cards"
+      },
+      {
+        "name": "Pay school fees"
+      },
+      {
+        "name": "Renew insurance"
+      }
+    ]
+  },
+  {
+    "category": "Pet",
+    "tasks": [
+      {
+        "name": "Walk the dog"
+      },
+      {
+        "name": "Feed the dog"
+      }
+    ]
+  },
+  {
+    "category": "Health",
+    "tasks": [
+      {
+        "name": "Schedule doctor appointment"
+      },
+      {
+        "name": "Pay medical bills"
+      }
+    ]
+  },
+  {
+    "category": "Yard work",
+    "tasks": [
+      {
+        "name": "Water plants"
+      },
+      {
+        "name": "Shovel snow"
+      },
+      {
+        "name": "Mow lawn"
+      }
+    ]
+  }
+]
