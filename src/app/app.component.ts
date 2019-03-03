@@ -248,7 +248,11 @@ export class AppComponent {
 
   onMouseUpOverTask(ev, category, task) {
     ev.stopPropagation();
-    task.selected = !task.selected
+    task.selected = !task.selected;
+  }
+
+  onTaskClick(ev) {
+    ev.stopPropagation();
   }
 
   getTaskCount(avenger) {

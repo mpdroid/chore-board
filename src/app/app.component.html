@@ -46,6 +46,7 @@
                                               [attr.data-aid]="aid"
                                               [attr.data-categoryname]="category.name"
                                               [attr.data-taskid]="taskId"
+                                              (click)="onTaskClick($event)"
                                               (mouseup)="onMouseUpOverTask($event, category, task)"
                                     >
                                         <mat-card-content>{{task.name}}</mat-card-content>
